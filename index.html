@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitch Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <h1>Maths is hard</h1>
-    <div id="screen"></div>
+    <div id="screen" class="textOutput"></div>
     <div class="flex-container">
         <button type="button" onClick="numPressed(1)">1</button>
         <button type="button" onClick="numPressed(2)">2</button>
@@ -22,11 +22,12 @@
         <button type="button" onClick="numPressed(8)">8</button>
         <button type="button" onClick="numPressed(9)">9</button>
         <button type="button" onClick="numPressed(0)">0</button>
-        <button type="button" onClick="operate('plus')">+</button>
-        <button type="button" onClick="operate('minus')">-</button>
-        <button type="button" onClick="operate('times')">x</button>
-        <button type="button" onClick="operate('divide')">/</button>
-        <button type="button" onClick="clear()">CE</button>
+        <button type="button" onClick="numPressed('+')">+</button>
+        <button type="button" onClick="numPressed('-')">-</button>
+        <button type="button" onClick="numPressed('x')">x</button>
+        <button type="button" onClick="numPressed('&#247')">&#247;</button>
+        <button type="button" onClick="clearCalc()">CE</button>
     </div>
+    <div id="answerBox" class="textOutput"></div>
 </body>
 </html>
