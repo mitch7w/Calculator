@@ -1,24 +1,85 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #edf2f4 ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: orange;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: #8d99ae;
+    text-align: center;
+    width: 40vw;
+    height: 56vh;
+    border-radius: 5%;
+    margin: 1rem auto;
 }
 
 .flex-container button {
-     background-color: lightskyblue;
-     margin: 10px;
-     padding: 20px ;
-     text-align: center;
-     font-size: 40px;
+    background-color: #ef233c;
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    border: 0;
+    border-radius: 15%;
+    padding: 0 4rem 0 4rem;
+    margin: 1rem;
 }
 
 h1 {
-    color: red;
+    color: #ef233c;
+    font-family: 'Bangers', cursive;
+    font-size: 6rem;
+    text-align: center;
+    margin: 2rem;
+    letter-spacing: 0.05em;
 }
 
 .textOutput {
-    width: 400px ;
-    height: 30px;
-    background-color: #e0e0e0 ;
-    margin: 15px;
+    width: 40vw;
+    height: 2.5rem;
+    background-color: #2b2d42;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    border-radius: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover {
+    text-decoration: underline ;
+}
+
+@media only screen and (max-width: 870px) {
+    .flex-container {
+        width: 80vw;
+        height: 45vh;
+    }
+
+    .flex-container button {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 1590px) {
+    .flex-container button {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .flex-container button {
+        padding: 0 1rem 0 1rem;
+    }
 }
