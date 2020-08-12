@@ -47,7 +47,7 @@ function calculate() {
     }
     // update answerBlock
     if (!total) { // When sum starts with a negative
-        document.getElementById("answerBox").innerHTML = "Dunno tbh";
+        document.getElementById("answerBox").innerHTML = "Dunno";
     } else {
         document.getElementById("answerBox").innerHTML = total;
     }
@@ -67,7 +67,7 @@ function sortAlgebra() {
 
         } else { // Have reached an operator
             if ((algebraString[i] == "x" || algebraString[i] == "÷") && (algebraString[i - 1] == "x" || algebraString[i - 1] == "÷")) {
-                document.getElementById("answerBox").innerHTML = "Dunno tbh";
+                document.getElementById("answerBox").innerHTML = "Dunno";
             } else if (i == 0 || algebraString[i - 1] == "x" || algebraString[i - 1] == "÷") { // Negative number not an operator
                 numString += algebraString[i];
             } else {
@@ -77,7 +77,6 @@ function sortAlgebra() {
             }
         }
     }
-    // If two operators put next to each other disable click of all buttons except CE
 }
 
 
